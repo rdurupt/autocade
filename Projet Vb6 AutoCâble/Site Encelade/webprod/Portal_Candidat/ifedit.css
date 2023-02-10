@@ -1,0 +1,106 @@
+.header {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11pt; color: 000000; text-decoration: none; font-weight: bold;}
+.body {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: 000000; text-decoration: none font-weight: normal;}
+
+.ButtonNormal
+{
+	background-color: 666699;
+	border-left: #666699 solid 1px;
+	border-top: #666699 solid 1px;
+	border-right: #666699 solid 1px;
+	border-bottom: #666699 solid 1px;
+}
+
+.ButtonPressed
+{
+	background-color: 666699;
+	border-left: navy solid 1px;
+	border-top: navy solid 1px;
+	border-right: A6A6C4 solid 1px;
+	border-bottom: A6A6C4 solid 1px;
+}
+
+.ButtonMouseOver
+{
+	background-color: 666699;
+	border-left: A6A6C4 solid 1px;
+	border-top: A6A6C4 solid 1px;
+	border-right: navy solid 1px;
+	border-bottom: navy solid 1px;
+}
+
+.ButtonDisabled
+{
+	background-color: 666699;
+	border-left: 666699 solid 1px;
+	border-top: 666699 solid 1px;
+	border-right: 666699 solid 1px;
+	border-bottom: 666699 solid 1px;
+}
+
+.Image
+{
+	width: 22px;
+	height: 22px;
+}
+
+.Image2
+{
+	width: 50px;
+	height: 22px;
+}
+
+.Toolbar
+{
+	background-color: #C0C0F0;
+	border-left: A6A6C4 solid 1px;
+	border-top: A6A6C4 solid 1px;
+	border-right: navy solid 1px;
+	border-bottom: navy solid 1px;
+	height: 30px;
+}
+
+.Divider
+{
+	background-color: 666699;
+	border-left: navy solid 1px;
+	border-top: navy solid 1px;
+	border-right: A6A6C4 solid 1px;
+	border-bottom: A6A6C4 solid 1px;
+	width: 2px;
+	height: 24px;
+}
+
+.Swatch
+{
+	background-color: 666699;
+	border-left: A6A6C4 solid 1px;
+	border-top: A6A6C4 solid 1px;
+	border-right: navy solid 1px;
+	border-bottom: navy solid 1px;
+	width: 3px;
+	height: 24px;
+}
+
+.Space
+{
+	background-color: 666699;
+	width: 0px;
+	height: 24px;
+}
+
+.Text
+{
+	font: 8pt verdana,arial,sans-serif
+}
+
+.List
+{
+	background: white;
+	font: 8pt verdana,arial,sans-serif
+}
+
+.Heading
+{
+	color:black;
+	background:white;
+}

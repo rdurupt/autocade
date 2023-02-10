@@ -1,0 +1,103 @@
+
+
+
+<html>
+<head>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="cache-control" CONTENT="private">
+<meta http-equiv="cache-control" content="no-cache">
+<SCRIPT LANGUAGE="JavaScript">
+
+
+var H=new Object;
+function AffHorloge() {
+	var d=new Date();
+	var heure=d.getHours();
+	var min=d.getMinutes();
+	var sec=d.getSeconds();
+	if (heure<10) heure="0"+heure;
+	if (min<10) min="0"+min;
+	if (sec<10) sec="0"+sec;
+	contenu="<SPAN>"+heure+":"+min+":"+sec+"</SPAN>";
+
+	if (document.layers) {
+		document.layers["horloge"].document.write(contenu);
+		document.layers["horloge"].document.close();
+	}
+	if (document.all) {horloge.innerHTML=contenu;}
+	setTimeout("AffHorloge()",1000);
+}
+
+function InitHorloge(X,Y,CSS) {
+	H.CSS=CSS;H.X=X;H.Y=Y;
+	if (document.all) {
+		document.write("<DIV id='horloge' style='position:absolute;top:"+Y+";left:"+X+";visibility:show'></DIV>");
+		AffHorloge();
+	}
+	if (document.layers) {
+		document.write("<LAYER name='horloge' top='"+Y+"' left='"+X+"' visibility='show'></LAYER>");
+		setTimeout('AffHorloge()',200);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+navvers = navigator.appVersion.substring(0,1);
+if (navvers > 3)
+	navok = true;
+else
+	navok = false;
+
+today = new Date;
+jour = today.getDay();
+numero = today.getDate();
+if (numero<10)
+	numero = "0"+numero;
+mois = today.getMonth();
+if (navok)
+	annee = today.getFullYear();
+else
+	annee = today.getYear();
+TabJour = new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi");
+TabMois = new Array("janvier","février","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","décembre");
+messageDate = TabJour[jour] + " " + numero + " " + TabMois[mois];
+
+</SCRIPT>
+
+<script language="JavaScript">
+PMInitExt = function()
+{
+ PM.Init("PM999");
+}
+</script>
+</head>
+
+<body background="ImageSysteme/hauteboutique.gif" leftmargin="0" topmargin="0" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td align="left" width="1%"><img src="ImageSysteme/logoencelade.gif" width="215" height="76"></td>
+     <td width="98%">
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td align="right"><font color="#028A82" size="2" face="Geneva, Arial, Helvetica, sans-serif"><script language="JavaScript">
+           document.write(messageDate);
+</script>&nbsp;<script language="javascript">
+	   InitHorloge(); 
+	   // Paramètres (position en X, position en Y, style)
+          </script>&nbsp;&nbsp;&nbsp;</font></td>
+        </tr>
+      </table></td>
+    <td width="1%" align="right"><img src="ImageSysteme/logo2.gif" width="159" height="76"></td>
+  </tr>
+</table>
+</body>
+</html>
+
+
