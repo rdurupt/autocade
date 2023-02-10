@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Insérer une table</title>
+<link rel="stylesheet" type="text/css" href="../Css/HE_Style.css">
+<script language="JavaScript" src="../Js/HE_InsertTable.js"></script>
+</head>
+
+<body>
+<FORM METHOD="POST" name="tableForm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+ <tr>
+  <td width="15"></td>
+  <td class="TitrePopup">Insérer une table</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">Veuillez saisir les informations requises pour l'insertion d'une table.<br>Cliquer le boutton "Annuler" pour fermer cette fenetre.</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table width="98%" border="0" cellspacing="0" cellpadding="0" class="TblPopupTitre">
+    <tr>
+     <td>&nbsp;&nbsp;Informations sur la table</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table border="0" cellspacing="0" cellpadding="5" width="98%" class="TblPopupInt">
+    <tr>
+     <td class="Text" width="100">Lignes :</td>
+     <td class="Text" width="150">
+      <input type="text" name="rows" size="2" value="1" class="Text" style="width:50;" maxlength="2">
+     </td>
+     <td class="Text">Espacement texte :</td>
+     <td class="Text">
+      <input type="text" name="padding" size="2" value="2" class="Text" style="width:50;" maxlength="2">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" width="100">Colonnes :</td>
+     <td class="Text" width="150">
+      <input type="text" name="columns" size="2" value="1" class="Text" style="width:50;" maxlength="2">
+     </td>
+     <td class="Text">Espacement cellules :</td>
+     <td class="Text">
+      <input type="text" name="spacing" size="2" value="2" class="Text" style="width:50;" maxlength="2">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" width="100">Largeur :</td>
+     <td class="Text" width="150">
+      <input type="text" name="width" size="2" value="100%" class="Text" style="width:50;" maxlength="4">
+     </td>
+     <td class="Text">Bordures :</td>
+     <td class="Text">
+      <input type="text" name="border" size="2" value="1" class="Text" style="width:50;" maxlength="2">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" width="100">Couleur de fond :</td>
+     <td class="Text" width="150">
+      <input type="text" name="bgcolor" size="2" value="" class="Text" style="width:50;" maxlength="7">
+      <img src="../Img/Bouttons/he_cback.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayColor();">
+     </td>
+     <td class="Text">&nbsp;</td>
+     <td class="Text">&nbsp;</td>
+    </tr>
+    <tr>
+     <td class="Text" nowrap>Image de fond :</td>
+     <td class="Text" colspan="3">
+      <input type="text" name="background" size="40" value="" class="Text">
+      <img src="../Img/Bouttons/he_image.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayImage('tableForm');">
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>	
+   <input type="button" name="insertTable" value="Insérer la table" class="Text" onClick="javascript:InsertTable();">
+   <input type=button name="Cancel" value="Annuler" class="Text" onClick="javascript:window.close()">
+  </td>
+ </tr>
+</table>
+</form>
+</body>
+</html>

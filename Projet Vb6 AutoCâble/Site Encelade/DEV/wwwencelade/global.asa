@@ -1,0 +1,9 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+  
+sub Application_OnStart
+
+  Application("PortalComObject")="GNV"
+
+end sub
+
+</SCRIPT>

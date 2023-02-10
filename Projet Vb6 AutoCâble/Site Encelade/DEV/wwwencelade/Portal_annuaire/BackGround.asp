@@ -1,0 +1,3 @@
+<%
+Response.redirect "background.gif"
+%>

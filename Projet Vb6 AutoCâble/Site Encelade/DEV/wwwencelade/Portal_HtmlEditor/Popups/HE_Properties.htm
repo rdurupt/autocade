@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Modifier les propriétés de la page</title>
+<link rel="stylesheet" type="text/css" href="../Css/HE_Style.css">
+<script language="JavaScript" src="../Js/HE_Properties.js"></script>
+</head>
+
+<body>
+<FORM METHOD="POST" name="pageForm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+ <tr>
+  <td width="15"></td>
+  <td class="TitrePopup">Modifier les propriétés de la page</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">Veuillez saisir les informations requises pour la modification des propriétés de la page.<br>Cliquer le boutton "Annuler" pour fermer cette fenetre.</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table width="98%" border="0" cellspacing="0" cellpadding="0" class="TblPopupTitre">
+    <tr>
+     <td>&nbsp;&nbsp;Informations sur la page</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table border="0" cellspacing="0" cellpadding="5" width="98%" class="TblPopupInt">
+    <tr>
+     <td class="Text">Titre :</td>
+     <td class="Text">
+      <input type="text" name="pagetitle" size="40" value="" class="Text" maxlength="100">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text">Description :</td>
+     <td class="Text">
+      <textarea name="description" rows="4" cols="26" class="Text"></textarea>
+     </td>
+    </tr>
+    <tr>
+     <td class="Text">Mots clés :</td>
+     <td class="Text">
+      <input type="text" name="keywords" size="40" value="" class="Text" maxlength="300">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text">Image de fond :</td>
+     <td class="Text">
+      <input type="text" name="background" size="40" value="" class="Text" maxlength="300">
+      <img src="../Img/Bouttons/he_image.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayImage('pageForm');">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" width="100">Couleur de fond :</td>
+     <td class="Text" width="150">
+      <input type="text" name="bgcolor" size="2" value="" class="Text" style="width:50;" maxlength="7">
+      <img src="../Img/Bouttons/he_cback.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayColor('bg');">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" width="100">Couleur du texte :</td>
+     <td class="Text" width="150">
+      <input type="text" name="textcolor" size="2" value="" class="Text" style="width:50;" maxlength="7">
+      <img src="../Img/Bouttons/he_cback.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayColor('tx');">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" width="100">Couleur des liens :</td>
+     <td class="Text" width="150">
+      <input type="text" name="linkcolor" size="2" value="" class="Text" style="width:50;" maxlength="7">
+      <img src="../Img/Bouttons/he_cback.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayColor('lk');">
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>	
+   <input type="button" name="editPage" value="Modifier la page" class="Text" onClick="javascript:EditPage();">
+   <input type=button name="Cancel" value="Annuler" class="Text" onClick="javascript:window.close()">
+  </td>
+ </tr>
+</table>
+</form>
+<script language="JavaScript">
+setValues();
+</script>
+</body>
+</html>

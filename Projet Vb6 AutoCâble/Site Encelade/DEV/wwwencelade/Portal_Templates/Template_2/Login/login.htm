@@ -1,0 +1,93 @@
+<script language="JavaScript">
+function formSubmit(){
+  uneErreur = 0;
+  nl = String.fromCharCode(13) + String.fromCharCode(10);
+  myForm = this.document.forms[0];
+  leMessage = "Veuillez vérifier les informations suivantes :" + nl + nl;
+
+  if (myForm.f_login.value + "" == "") {
+    leMessage += "     - Votre login" + nl;
+    if (uneErreur != 1) {
+      myForm.f_login.focus();
+    }
+    uneErreur = 1;
+  }
+  if (myForm.f_password.value + "" == "") {
+    leMessage += "     - Votre password" + nl;
+    if (uneErreur != 1) {
+      myForm.f_password.focus();
+    }
+    uneErreur = 1;
+  }
+  if (uneErreur == 1) {
+    alert(leMessage);
+  } else {
+    myForm.h_mode.value = "CheckLogin";
+    myForm.target = '_self';
+    myForm.action = "[%app_path%]Portal_Asp/Portal.asp";
+    myForm.submit();
+  }
+};
+document.onkeypress = document.onkeyup = function() {
+ if (event.keyCode == 13) {
+  formSubmit();
+ }
+};
+</script>
+
+<body bgcolor="#F1E9DE">
+<p>&nbsp;</p><table border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td><img src="[%img_path%]login1.gif" width="326" height="48"></td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" height="100%">
+              <tr> 
+                <td height="29" background="[%img_path%]bgid.gif"> 
+                  <div align="center">
+                    <input type="text" name="f_login" value="" size="15" maxlength="30" tabindex="1" onChange="jsTrim(this);" class="champ">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="[%img_path%]login2.gif" width="237" height="22"></td>
+              </tr>
+              <tr> 
+                <td  background="[%img_path%]bgmdp.gif" valign="top" height="47"> 
+                  <div align="center"> 
+                    <input type="password" name="f_password" value="" size="15" maxlength="30" tabindex="2" onChange="jsTrim(this);" class="champ">
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><img src="[%img_path%]login3.gif" width="89" height="98" border="0" usemap="#mapp"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<style type="text/css">
+#ErrorMsg {
+ COLOR: red;
+ FONT-FAMILY: verdana;
+ FONT-SIZE: 9pt;
+ FONT-WEIGHT: normal;
+}
+</style>
+<br>
+<br>
+<center>
+[%l_msg%]
+</center>
+<script language="JavaScript">
+document.forms[0].f_login.focus();
+</script>
+<map name="mapp">
+  <area shape="rect" coords="3,79,86,96" href"#" onclick="formSubmit();">
+</map>

@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Insérer / Modifier un email</title>
+<link rel="stylesheet" type="text/css" href="../Css/HE_Style.css">
+<script language="JavaScript" src="../Js/HE_Email.js"></script>
+</head>
+
+<body>
+<form name="emailForm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+ <tr>
+  <td width="15"></td>
+  <td class="TitrePopup">Gestionnaire d'emails</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">Veuillez saisir les informations requises pour l'insertion ou la modification d'un email.<br>Cliquer le boutton "Annuler" pour fermer cette fenetre.</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table width="98%" border="0" cellspacing="0" cellpadding="0" class="TblPopupTitre">
+    <tr>
+     <td>&nbsp;&nbsp;Informations sur l'email</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table border="0" cellspacing="0" cellpadding="5" width="98%" class="TblPopupInt">
+    <tr>
+     <td class="Text" width="90">Adresse Email :</td>
+     <td class="Text">
+      <input type="text" name="email" size="40" class="Text" maxlength="150">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text">Sujet :</td>
+     <td class="Text">
+      <input type="text" name="subject" size="40" class="Text">
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>
+   <input type="button" name="insertEmail" value="Insérer l'email" class="Text" onClick="javascript:InsertEmail();">
+   <input type="button" name="removeEmail" value="Supprimer l'email" class="Text" onClick="javascript:RemoveEmail();">
+   <input type="button" name="Cancel" value="Annuler" class="Text" onClick="javascript:window.close()">
+  </td>
+ </tr>
+</table>
+</form>
+<script language="JavaScript">
+getEmail();
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Modifier une cellule</title>
+<link rel="stylesheet" type="text/css" href="../Css/HE_Style.css">
+<script language="JavaScript" src="../Js/HE_EditCell.js"></script>
+</head>
+
+<body>
+<FORM METHOD="POST" name="tableForm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+ <tr>
+  <td width="15"></td>
+  <td class="TitrePopup">Modifier une cellule</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">Veuillez saisir les informations requises pour la modification de la cellule.<br>Cliquer le boutton "Annuler" pour fermer cette fenetre.</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table width="98%" border="0" cellspacing="0" cellpadding="0" class="TblPopupTitre">
+    <tr>
+     <td>&nbsp;&nbsp;Informations sur la cellule</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table border="0" cellspacing="0" cellpadding="5" width="98%" class="TblPopupInt">
+    <tr>
+     <td class="Text" width="100">Couleur de fond :</td>
+     <td class="Text" width="150">
+      <input type="text" name="bgcolor" size="2" value="" class="Text" style="width:50;" maxlength="7">
+      <img src="../Img/Bouttons/he_cback.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayColor();">
+     </td>
+     <td class="Text" width="100">Largeur :</td>
+     <td class="Text" width="150">
+      <input type="text" name="width" size="2" value="" class="Text" style="width:50;" maxlength="4">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" nowrap>Alignement horizontal :</td>
+     <td class="Text">
+      <select name="align" style="width:70;" class="Text">
+       <option value="">Aucun
+       <option value="Left">Gauche
+       <option value="Center">Centre
+       <option value="Right">Droite
+      </select>
+     </td>
+     <td class="Text" nowrap>Alignement vertical :</td>
+     <td class="Text">
+      <select name="valign" style="width:70;" class="Text">
+       <option value="">Aucun
+       <option value="Top">Haut
+       <option value="Middle">Milieu
+       <option value="Bottom">Bas
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" nowrap>Image de fond :</td>
+     <td class="Text" colspan="3">
+      <input type="text" name="background" size="40" value="" class="Text">
+      <img src="../Img/Bouttons/he_image.gif" width="21" height="20" border="0" align="absmiddle" onClick="DisplayImage('tableForm');">
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>	
+   <input type="button" name="editCell" value="Modifier la cellule" class="Text" onClick="javascript:EditCell();">
+   <input type=button name="Cancel" value="Annuler" class="Text" onClick="javascript:window.close()">
+  </td>
+ </tr>
+</table>
+</form>
+<script language="JavaScript">
+setValues();
+</script>
+</body>
+</html>

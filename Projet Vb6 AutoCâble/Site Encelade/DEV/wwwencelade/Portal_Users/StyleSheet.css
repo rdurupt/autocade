@@ -1,0 +1,16 @@
+BODY { 
+		margin-left: 0px;
+		margin-top:  0px;
+		font: 8pt "Verdana";		
+		text-align: left;
+		color: DARKBLUE;
+		}
+TD {font: 10pt "Verdana";color: navy;}
+
+STRONG {font: 16pt "Times New Roman";font-weight: bold;} 
+EM {font: 14pt "Verdana";}
+format1 {color:black; font: 8pt "Verdana"; font-weight: bold;}
+format2 {font: 3pt "Verdana";}
+A:link {text-decoration: none; color:navy; font: 8pt "Verdana";}
+A:visited {text-decoration: none; color:navy; font: 8pt "Verdana";}
+A:hover {text-decoration:none; color:red; font: 8pt "Verdana";}

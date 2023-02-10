@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Modifier une image</title>
+<link rel="stylesheet" type="text/css" href="../Css/HE_Style.css">
+<script language="JavaScript" src="../Js/HE_EditImage.js"></script>
+</head>
+
+<body>
+<FORM METHOD="POST" name="imageForm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+ <tr>
+  <td width="15"></td>
+  <td class="TitrePopup">Modifier une image</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">Veuillez saisir les informations requises pour la modification de l'image.<br>Cliquer le boutton "Annuler" pour fermer cette fenetre.</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table width="98%" border="0" cellspacing="0" cellpadding="0" class="TblPopupTitre">
+    <tr>
+     <td>&nbsp;&nbsp;Informations sur l'image</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table border="0" cellspacing="0" cellpadding="5" width="98%" class="TblPopupInt">
+    <tr>
+     <td class="Text" width="100" nowrap>Texte d'aide :</td>
+     <td class="Text" colspan="3">
+      <input type="text" name="alt_tag" size="40" value="" class="Text">
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" nowrap>Largeur :</td>
+     <td class="Text">
+      <input type="text" name="image_width" size="3" value="" style="width:50;" class="Text" maxlength="3">
+     </td>
+     <td class="Text" nowrap>Hauteur :</td>
+     <td class="Text">
+      <input type="text" name="image_height" size="3" value="" style="width:50;" class="Text" maxlength="3">
+     </td>
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" nowrap>Alignement :</td>
+     <td class="Text">
+      <select name="align" class="Text" style="width:70;">
+       <option value="">Aucun
+       <option value="Baseline">Baseline
+       <option value="Top">Top
+       <option value="Middle">Middle
+       <option value="Bottom">Bottom
+       <option value="TextTop">TextTop
+       <option value="ABSMiddle">ABSMiddle
+       <option value="ABSBottom">ABSBottom
+       <option value="Left">Left
+       <option value="Right">Right
+      </select>
+     </td>
+     <td class="Text" nowrap>Bordure :</td>
+     <td class="Text">
+      <input type="text" name="border" size="3" value="" style="width:50;" class="Text" maxlength="3">
+     </td>
+     </td>
+    </tr>
+    <tr>
+     <td class="Text" nowrap>Espacement horizontal :</td>
+     <td class="Text">
+      <input type="text" name="hspace" size="3" value="" style="width:50;" class="Text" maxlength="3">
+     </td>
+     <td class="Text" nowrap>Espacement vertical :</td>
+     <td class="Text">
+      <input type="text" name="vspace" size="3" value="" style="width:50;" class="Text" maxlength="3">
+     </td>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>	
+   <input type="button" name="editImage" value="Modifier l'image" class="Text" onClick="javascript:EditImg();">
+   <input type=button name="Cancel" value="Annuler" class="Text" onClick="javascript:window.close()">
+  </td>
+ </tr>
+</table>
+</form>
+<script language="JavaScript">
+setValues();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.oEl {
+  border : 1 solid buttonshadow;
+  background-color : buttonface;
+  color : buttonshadow;
+  font-family : Arial;
+  font-size : "x-small";
+  height : 25;
+  padding-left : 10;
+  padding-right : 10;
+  cursor : hand;
+}
+.oELCat {
+  border : 1 solid #0000FF;
+  background-color : #E0FFFF;
+  color : buttonshadow;
+  font-family : Arial;
+  font-size : "x-small";
+  height : 25;
+  padding-left : 10;
+  padding-right : 10;
+  cursor : hand;
+}

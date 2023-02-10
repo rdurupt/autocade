@@ -1,0 +1,146 @@
+body         {
+	font-family: verdana;
+	font-size:xx-small;
+	font-weight: normal;
+	background-color : #F1E9DE;
+	margin: 0px;
+	color : #000080;
+}
+TABLE
+{
+	FONT-SIZE: 100%; 
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+}
+select       {
+	font-size : xx-small;
+	background: white;
+	font-family : Verdana;
+	border-width : 1;
+	border-style : solid;
+	border-color : #000080;
+}
+A       {
+	font-family : Verdana;
+	font-weight: bold;
+}
+A:link
+{
+	color : #000080;
+	font-size : xx-small;
+	font-weight : bold;
+	TEXT-DECORATION: none
+}
+A:visited
+{
+	color : #000080;
+	font-size : xx-small;
+	font-weight : bold;
+	TEXT-DECORATION: none
+}
+A:hover
+{
+	color : #FF0000;
+	font-size : xx-small;
+	font-weight : bold
+}
+
+.formCaption  {
+	color : #000000;
+	font-weight : bold;
+	font-size : xx-small;
+}
+
+.adminFld  {
+	font-size : xx-small;
+	font-family : Verdana;
+	border-width : 1;
+	border-style : solid;
+	border-color : #008080;
+}
+.adminCmd  {
+	font-size : xx-small;
+	font-family : Verdana;
+	background-color : #8183A2;
+	color : #ffffff;
+	font-weight : bold;
+	border-width : thin;
+}
+.adminOnglets  {
+	font-size : xx-small;
+	font-family : Verdana;
+	background-color : #8183A2;
+	color : #ffffff;
+	font-weight : bold;
+	border-width : thin;
+}
+
+TD.headTitle
+{
+	PADDING-TOP: 7px;
+	PADDING-BOTTOM: 7px;
+}
+.headCaption
+{
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 180%;
+	FONT-WEIGHT: normal;
+}
+.headOuterTable
+{
+
+}
+.headContentTable
+{
+
+}
+.headSpacer
+{
+	WIDTH: 8px;
+	HEIGHT: 1px;
+}
+.headSidebarSpacer
+{
+}
+
+#THeading
+{
+    BACKGROUND-COLOR: #8183A2;
+    MARGIN-BOTTOM: 0em;
+    MARGIN-TOP: 0em
+}
+
+.clsNode, .clsNode:visited {
+	font-family : Verdana;
+	font-weight: bold;
+	color : #000080;
+	font-size : xx-small;
+	TEXT-DECORATION: none
+}
+.clsNode:hover {
+	font-family : Verdana;
+	font-weight: bold;
+	color : #FF0000;
+	font-size : xx-small;
+	TEXT-DECORATION: none
+}
+.permLec, .permLec:hover, .permLec:visited {
+	font-family : Verdana;
+	font-weight: bold;
+	color : #000000;
+	font-size : xx-small;
+	TEXT-DECORATION: none
+}
+.permEcr, .permEcr:hover, .permEcr:visited {
+	font-family : Verdana;
+	font-weight: bold;
+	color : #0000FF;
+	font-size : xx-small;
+	TEXT-DECORATION: none
+}
+.permAdm, .permAdm:hover, .permAdm:visited {
+	font-family : Verdana;
+	font-weight: bold;
+	color : #FF0000;
+	font-size : xx-small;
+	TEXT-DECORATION: none
+}

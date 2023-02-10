@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Insérer / Modifier une ancre</title>
+<link rel="stylesheet" type="text/css" href="../Css/HE_Style.css">
+<script language="JavaScript" src="../Js/HE_Anchor.js"></script>
+</head>
+
+<body>
+<form name="anchorForm">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+ <tr>
+  <td width="15"></td>
+  <td class="TitrePopup">Gestionnaire d'ancres</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">Veuillez saisir les informations requises pour l'insertion ou la modification d'une ancre.<br>Cliquer le boutton "Annuler" pour fermer cette fenetre.</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">&nbsp;</td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table width="98%" border="0" cellspacing="0" cellpadding="0" class="TblPopupTitre">
+    <tr>
+     <td>&nbsp;&nbsp;Informations sur l'ancre</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td class="Text">
+   <table border="0" cellspacing="0" cellpadding="5" width="98%" class="TblPopupInt">
+    <tr>
+     <td class="Text" width="90">Nom :</td>
+     <td class="Text">
+      <input type="text" name="anchor_name" size="40" class="Text" maxlength="150">
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height="10"></td>
+ </tr>
+ <tr>
+  <td>&nbsp;</td>
+  <td>
+   <input type="button" name="insertAnchor" value="Insérer l'Ancre" class="Text" onClick="javascript:InsertAnchor();">
+   <input type="button" name="Submit" value="Annuler" class="Text" onClick="javascript:window.close()">
+  </td>
+ </tr>
+</table>
+<script language="JavaScript">
+if (mode == "Edit") {
+ document.anchorForm.anchor_name.value = foo.document.selection.createRange()(0).name;
+ document.anchorForm.insertAnchor.value = "Modifier l'Ancre";
+ document.anchorForm.insertAnchor.onclick = function() {EditAnchor();};
+}
+</script>
+</form>
+</body>
+</html>

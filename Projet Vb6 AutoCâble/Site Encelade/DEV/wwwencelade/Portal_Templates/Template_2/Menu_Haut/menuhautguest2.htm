@@ -1,0 +1,95 @@
+<html>
+
+<link rel="stylesheet" type="text/css" href="/demoencelade/Portal_Templates/Template_2/Styles/euxiaportal.css">
+<script language="JavaScript">
+function formSubmit(){
+  uneErreur = 0;
+  nl = String.fromCharCode(13) + String.fromCharCode(10);
+  myForm = this.document.forms[0];
+  leMessage = "Veuillez vérifier les informations suivantes :" + nl + nl;
+
+  if (myForm.f_login.value + "" == "") {
+    leMessage += "     - Votre login" + nl;
+    if (uneErreur != 1) {
+      myForm.f_login.focus();
+    }
+    uneErreur = 1;
+  }
+  if (myForm.f_password.value + "" == "") {
+    leMessage += "     - Votre password" + nl;
+    if (uneErreur != 1) {
+      myForm.f_password.focus();
+    }
+    uneErreur = 1;
+  }
+  if (uneErreur == 1) {
+    alert(leMessage);
+  } else {
+    myForm.h_mode.value = "CheckLogin";
+    myForm.target = '_self';
+    myForm.action = "[%app_path%]Portal_Asp/Portal.asp";
+    myForm.submit();
+  }
+};
+document.onkeypress = document.onkeyup = function() {
+ if (event.keyCode == 13) {
+  formSubmit();
+ }
+};
+</script>
+
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" background="[%img_path%]bg_haut.gif">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="22%" valign="top"><img src="[%img_path%]logo.gif" width="164" height="94"></td>
+    <td width="40%" valign="top"> 
+      <div align="center"><img src="[%img_path%]haut1.gif"></div>
+    </td>
+    <td width="40%" valign="top"> 
+      <div align="center"><img src="[%img_path%]haut2.gif"></div>
+    </td>
+    <td valign="top" align="right"><table border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1%">&nbsp;</td>
+          <td><img src="[%img_path%]login.gif" width="82" height="21"></td>
+          <td><img src="[%img_path%]mdp.gif" width="91" height="21"></td>
+        </tr>
+        <tr> 
+          <td height="30"><img src="[%img_path%]pix.gif" width="1" height="30"></td>
+          <td background="[%img_path%]bg_login.gif"><div align="center"> 
+              <input type="text" name="f_login" value="" size="7" maxlength="30" tabindex="1" onChange="jsTrim(this);" class="champ2">
+            </div></td>
+          <td background="[%img_path%]bg_mdp.gif"> <div align="left">
+              <input type="password" name="f_password" value="" size="7" maxlength="30" tabindex="2" onChange="jsTrim(this);" class="champ2">
+            </div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"><img src="[%img_path%]connexion.gif" width="173" height="22" border="0" usemap="#Map"></td>
+        </tr>
+      </table>
+	  
+      [%l_msg%]
+        <font color="#C89B3C">
+<b><font face="verdana, Arial, Helvetica, sans-serif" size="2">Bienvenue&nbsp;&nbsp;&nbsp; 
+        </font></b></font>
+    </td>
+  </tr>
+</table>
+<script language="JavaScript">
+document.forms[0].f_login.focus();
+</script>
+<div id="Layer1" style="position:absolute; left:190px; top:1px; width:126px; height:38px; z-index:1"><img src="[%img_path%]slo.gif" width="203" height="74"></div>
+<map name="Map">
+  <area shape="rect" coords="78,1,158,16" href="#" onclick="formSubmit();">
+</map>
+<style type="text/css">
+#ErrorMsg {
+ COLOR: red;
+ FONT-FAMILY: verdana;
+ FONT-SIZE: 9pt;
+ FONT-WEIGHT: normal;
+}
+</style>
+</body>
+</html>

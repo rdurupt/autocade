@@ -1,0 +1,12 @@
+BODY { 
+		margin-left: 5px;
+		margin-top:  5px;
+		font: 8pt "Verdana";		
+		text-align: left;
+		color: DARKBLUE;
+		}
+TD {font: 10pt "Verdana";color: navy;}
+
+A:link {text-decoration: none; color:navy; font: 8pt "Verdana";}
+A:visited {text-decoration: none; color:navy; font: 8pt "Verdana";}
+A:hover {text-decoration: none; color:red; font: 8pt "Verdana";}

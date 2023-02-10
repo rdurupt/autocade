@@ -1,0 +1,108 @@
+.BarreBouttons {
+  border : 1px solid #999999;
+}
+.Boutton {
+  border : 1px solid buttonface;
+  cursor : hand;
+}
+.BouttonActif {
+  border-bottom : 1px solid buttonhighlight;
+  border-right : 1px solid buttonhighlight;
+  border-top : 1px solid buttonshadow;
+  border-left : 1px solid buttonshadow;
+  background-color : #E9E9E9;
+}
+.Off {
+  display : none;
+  visibility : hidden;
+}
+.OnBouttons {
+  background-color : #D4D0C8;
+  border : 1px solid #D4D0C8;
+  font-family : Arial, Verdana;
+  font-size : 12px;
+  font-weight : bold;
+  color : #FFFFFF;
+}
+.Slt60px { 
+  font-family : Arial, Verdana;
+  font-size : 11px;
+  width : 60px;
+  color : #333333;
+}
+.Slt70px { 
+  font-family : Arial, Verdana;
+  font-size : 11px;
+  width : 70px;
+  color : #333333;
+}
+.Slt90px { 
+  font-family : Arial, Verdana;
+  font-size : 11px;
+  width : 90px;
+  color : #333333;
+}
+.TblIFrame {
+  border-right : 1px solid #999999;
+  border-left : 1px solid #999999;
+  padding : 5px;
+  width : 100%;
+  background-color : buttonface;
+}
+.TblPopupInt {
+  font-family : Arial, Verdana;
+  font-size : 12px;
+  font-weight : bold;
+  color : #FFFFFF;
+  border : 1px solid #000000;
+  background-color : #E9E9E9;
+}
+.TblPopupTitre {
+  font-family : Arial, Verdana;
+  font-size : 12px;
+  font-weight : bold;
+  color : #FFFFFF;
+  border : 1px solid #000000;
+  background-color : #004173;
+}
+.TblStatus {
+  border-right : 1px solid #999999;
+  border-left : 1px solid #999999;
+  border-bottom : 1px solid #999999;
+}
+.TitrePopup {
+  font-family : Arial, Verdana;
+  font-size : 18px;
+  font-weight : bold;
+  color : #004173;
+  text-decoration : none;
+}
+.Text {
+  font-family : Arial, Verdana;
+  font-size : 11px;
+  font-weight : normal;
+  color : #4E4F4F;
+  text-decoration : none;
+}
+.adminCmd  {
+	font-size : xx-small;
+	font-family : Verdana;
+	background-color : #8183A2;
+	color : #ffffff;
+	font-weight : bold;
+	border-width : thin;
+}
+.linkCat, .linkCat:hover, .linkCat:active, .linkCat:visited {
+  font-family : Arial, Verdana;
+  font-size : 11px;
+  font-weight : normal;
+  color : #FF0000;
+  text-decoration : none;
+}
+.linkTopic, .linkTopic:hover, .linkTopic:active, .linkTopic:visited {
+  font-family : Arial, Verdana;
+  font-size : 11px;
+  font-weight : normal;
+  color : #0000FF;
+  text-decoration : none;
+}
