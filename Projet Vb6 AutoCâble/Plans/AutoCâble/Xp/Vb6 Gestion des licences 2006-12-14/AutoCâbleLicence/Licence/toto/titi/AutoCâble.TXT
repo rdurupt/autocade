@@ -1,0 +1,11 @@
+Socété: toto
+User: titi
+Licence: 7111116111n
+Pass Word: zozozuzu
+Possible Achat: Oui
+Préenregistré la licence: Oui
+Prix: 1200 €
+Date Début: 10/01/2006
+Date Fin: 31/12/2006
+Nb Jetons: 3
+

@@ -1,0 +1,226 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>E-Candidat</title></head>
+<script language="javascript">
+
+</SCRIPT>
+<link rel="stylesheet" href="../portal_Styles/PMainStyle1.asp"><body>
+
+<center><input type="BUTTON" class='cmdflat' onClick="conf=window.open('confidentialite.htm','conf','resizable=no,toolbar=no,status=no,top=1,left=1,width=700,height=400');" value="Respect et Protection de la Vie Privée"></center><br>
+<div align="center"><form name="frm" action="Contact.asp">
+<SELECT NAME=select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+               <OPTION VALUE="/" SELECTED>Accès direct
+               <OPTION VALUE="http://www.imadiff.com/firstclass/index.htm">FirstClass
+               <OPTION VALUE="http://www.imadiff.com/funnelweb/index.htm">Funnel Web
+               <OPTION VALUE="http://www.imadiff.com/funnelweb/demo.htm">- Démo
+               <OPTION VALUE="http://www.imadiff.com/funnelweb/maj.htm">- Mise à jour
+               <OPTION VALUE="http://www.imadiff.com/phantom/index.htm">Phantom
+               <OPTION VALUE="http://www.imadiff.com/filemaker/index.htm">FileMaker
+               <OPTION VALUE="http://www.imadiff.com/hebergement/index.htm">Hébergement
+               <OPTION VALUE="http://www.imadiff.com/hebergement/sgbd.shtml">- Base de données Web
+               <OPTION VALUE="http://www.imadiff.com/hebergement/chatweb.htm">- Chat Web
+               <OPTION VALUE="http://www.imadiff.com/hebergement/ecommerce.htm">- E-Commerce
+               <OPTION VALUE="http://www.imadiff.com/hebergement/email.htm">- E-Mail
+               <OPTION VALUE="http://www.imadiff.com/hebergement/firstclass.htm">- FirstClass
+               <OPTION VALUE="http://www.imadiff.com/hebergement/forumweb.htm">- Forum Web
+               <OPTION VALUE="http://www.imadiff.com/hebergement/nom_de_domaine.shtml">- Nom de domaine
+               <OPTION VALUE="http://www.imadiff.com/hebergement/phantom.htm">- Phantom
+               <OPTION VALUE="http://www.imadiff.com/hebergement/serveur.shtml">- Serveur
+               <OPTION VALUE="http://www.imadiff.com/hebergement/web.htm">- Web standard
+               <OPTION VALUE="http://www.imadiff.com/realisations/index.htm">Réalisations
+              <option value="http://www.imadiff.com/success/index.htm">Success Stories </option>
+<option value="http://www.imadiff.com/solutions/index.htm">Solutions </option> 
+<option value="http://www.imadiff.com/formations/index.htm">Formations </option>
+            </SELECT>
+<table align="center" width="600PX"  cellpadding="1" cellspacing="0">
+<tr><td><table align="center" width="100%" border="0" cellpadding="1" cellspacing="0"><tr>
+
+<input type="hidden" name="mode" value="con_subContact">
+<input type="hidden" name="ContactID" value="0">
+<td width="10%" class=header> 1/6 
+<td width="60%" class=header>
+<b>Etat Civil</b>
+</td><td class=header align="right">
+</td></tr></table></td></tr></table>
+<script language="javascript">
+
+function javSubmit() {
+var count=0
+if (document.frm.lst1.value.length == 0) {
+alert ("Civilité : Champ Obligatoire.")
+document.frm.lst1.focus()
+count++
+}
+if (document.frm.txt1.value.length == 0) {
+alert ("Nom : Champ Obligatoire.")
+document.frm.txt1.focus()
+count++
+}
+if (document.frm.txt2.value.length == 0) {
+alert ("Prénom : Champ Obligatoire.")
+document.frm.txt2.focus()
+count++
+}
+if (document.frm.txt3.value.length == 0) {
+alert ("Né le : Champ Obligatoire.")
+document.frm.txt3.focus()
+count++
+}
+var my_txt3=document.frm.txt3.value;
+if (my_txt3.length==10  ) {
+for(var k = 0; k < my_txt3.length;k++)
+{
+var txt3c = my_txt3.substring(k,k+1);
+var txt3i = 0;
+if ( ((txt3c == '/') && ((k == 2) || (k == 5)) ) || ((((txt3c >= 0) && (txt3c <= 9) )) && ((k == 0) || (k == 1) || (k == 3) || (k == 4) || (k == 6) || (k == 7) || (k == 8) || (k == 9) ) ) ) {txt3i++;}
+else{alert(document.frm.txt3.value + " n'est pas au format jj/mm/aaaa")
+document.frm.txt3.focus()
+count++
+k=my_txt3.length
+}}}
+else{alert(document.frm.txt3.value + " n'est pas au format jj/mm/aaaa")
+document.frm.txt3.focus()
+count++
+}
+if (document.frm.txt6.value.length == 0) {
+alert ("Adresse : Champ Obligatoire.")
+document.frm.txt6.focus()
+count++
+}
+if (document.frm.txt7.value.length == 0) {
+alert ("Code postal : Champ Obligatoire.")
+document.frm.txt7.focus()
+count++
+}
+if (document.frm.txt8.value.length == 0) {
+alert ("Ville : Champ Obligatoire.")
+document.frm.txt8.focus()
+count++
+}
+if (document.frm.txt9.value.length == 0) {
+alert ("Tel Domicile : Champ Obligatoire.")
+document.frm.txt9.focus()
+count++
+}
+if (document.frm.txt12.value.length == 0) {
+alert ("Email : Champ Obligatoire.")
+document.frm.txt12.focus()
+count++
+}
+    if (count==0) {document.frm.submit()}
+}
+
+</script>
+<br><font class=smallerheader>Vous devez remplir au minimum les champs suivis de <img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0">. Merci.</font><br>
+<input type="hidden" name="sub" value="new">
+<table border="0" class="table" align="center" >
+
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Civilité : </font></td>
+<td  class="td2">
+
+<select name="lst1" >
+<option value="0" selected>Sélectionnez </option>
+<option value="2">Mme </option>
+<option value="4">Mlle </option>
+<option value="5">Mr </option>
+</select>
+<img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Nom : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt1" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Prénom : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt2" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Né le ( JJ/MM/AAAA ) : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt3" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Nom de jeune fille : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt4" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1"><font class="smallerheader">Situation familiale : </font></td>
+        <td > <font  class="smallerheader">
+          <select name="lst2" class="tbflat"   size="1">
+<option value="0">Sélectionnez </option>
+<option value="1">Célibataire </option>
+<option value="2">Vie maritale </option>
+<option value="3">Marié(e) </option>
+<option value="4">Divorcé(e) </option>
+<option value="5">Veuf(ve) </option>
+</select>
+</font>
+</td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Lieu de naissance : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt5" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Adresse : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt6" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Code postal : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt7" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Ville : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt8" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Tel Domicile : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt9" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Tel GSM : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt10" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Tel Autre : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt11" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Email : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt12" size="30" tabindex="1" ><img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Nom et profession du conjoint : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt13" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Profession de la mère : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt14" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Profession du père : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt15" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Nombre d`enfants : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt16" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">N° de Sécurité Sociale : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt17" size="30" tabindex="1" ></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Permis B : </font></td>
+<td align="left" class="td2" ><font class=smallerheader><input type="radio" class="smallerheader"  name="ckb1" tabindex="1"  value="OUI">Oui<input type="radio" class="smallerheader"  name="ckb1" tabindex="1"  value="NON">Non <img src="boulerose.gif" width="15" height="12" align="absmiddle" border="0"></font></td>
+</tr>
+<tr>
+<td align="right" class="td1" valign="top"><font class="smallerheader">Date d`obtention : </font></td>
+<td align="left" class="td2" ><input type="text"  name="txt18" size="30" tabindex="1" ></td>
+</tr>
+<tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2" align="right"><input type="button"  class='cmdflat' value="Valider Etape 1 sur 6" onClick="javSubmit();SetVals();">&nbsp;</td></tr></table>
+<input type="hidden" name="numpage" value="1">
+</form></div></body>
+<SCRIPT language=Javascript>
+
+function SetVals() {}
+
+</script></html>

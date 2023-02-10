@@ -1,0 +1,166 @@
+[Root]
+Most Recent Package=Logiciel d'installation standard 1
+
+
+[Package|Fichier  1.dep|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=C:\OcxRd\Install
+
+[Package|Fichier  1.dep|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Fichier  1.dep|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Fichier  1.dep|Files Found]
+
+[Package|Fichier  1.dep|Files Released]
+
+[Package|Fichier  1.dep|Missing Dependency Information]
+C:\OcxRd\Rechercher_ocx\AutocableOcx.ocx=
+
+[Package|Fichier  1.dep|Out-of-Date Dependency Information]
+
+[Package|Fichier  1.dep|Files Added]
+
+[Package|Fichier  1.dep|Files Removed]
+
+[Package|Fichier  1.dep|Files In Project]
+C:\OcxRd\Install\Projet1.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6FR.DLL=Yes
+C:\OcxRd\Rechercher_ocx\AutocableOcx.ocx=Yes
+
+[Package|Fichier  1.dep|Configure Registry Files]
+Applicable=
+
+[Package|Fichier  1.dep|Configure Remote Servers]
+Applicable=
+
+[Package|Fichier  1.dep|Install Locations]
+C:\OcxRd\Install\Projet1.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6FR.DLL=$(WinSysPath)
+C:\OcxRd\Rechercher_ocx\AutocableOcx.ocx=$(WinSysPath)
+
+[Package|Fichier  1.dep|Configure Shared Files]
+Applicable=
+
+[Package|Fichier  1.dep|DepFile]
+DepCabFile=Projet1.CAB
+DepCabRun=Projet1.INF
+
+[Package|Fichier  1.dep|Package]
+PackageFolder=C:\OcxRd\Install
+ProjectFolder=C:\OcxRd\Install
+ServerSideCab=
+File1=C:\OcxRd\Install\Projet1.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Logiciel d'installation standard 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\durupt
+
+[Package|Logiciel d'installation standard 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Logiciel d'installation standard 1|Files Found]
+
+[Package|Logiciel d'installation standard 1|Files Released]
+AutocableOcx.ocx=
+
+[Package|Logiciel d'installation standard 1|Missing Dependency Information]
+C:\OcxRd\Rechercher_ocx\AutocableOcx.ocx=
+
+[Package|Logiciel d'installation standard 1|Out-of-Date Dependency Information]
+
+[Package|Logiciel d'installation standard 1|Files Added]
+
+[Package|Logiciel d'installation standard 1|Files Removed]
+c:\ocxrd\install\projet1.exe=
+
+[Package|Logiciel d'installation standard 1|Files In Project]
+C:\OcxRd\Install\Projet1.exe=No
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6FR.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Logiciel d'installation standard 1|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Install Locations]
+C:\OcxRd\Install\Projet1.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6FR.DLL=$(WinSysPath)
+C:\OcxRd\Rechercher_ocx\AutocableOcx.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Logiciel d'installation standard 1|Configure Shared Files]
+Applicable=No
+C:\OcxRd\Install\Projet1.exe=Yes
+
+[Package|Logiciel d'installation standard 1|DepFile]
+DepCabFile=Projet1.CAB
+DepCabRun=Projet1.INF
+
+[Package|Logiciel d'installation standard 1|Distribution]
+Type=single
+Size=
+Title=Projet1
+
+[Package|Logiciel d'installation standard 1|IconGroups]
+Group0=Projet1
+PrivateGroup0=Faux
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard 1|Projet1]
+Icon1=Projet1.exe
+Title1=Projet1
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard 1|Package]
+PackageFolder=C:\durupt
+ProjectFolder=C:\OcxRd\Install
+ServerSideCab=
+File1=C:\durupt\setup.exe
+File2=C:\durupt\Setup.Lst
+File3=C:\durupt\Projet1.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

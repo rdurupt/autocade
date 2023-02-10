@@ -1,0 +1,24 @@
+[Version]
+Version=1.0.0.0
+
+[Projet1.exe <000C>]
+Dest=$(AppPath)
+Date=25/05/2007
+Time=15:56
+Version=1.0.0.0
+CABFilename=Projet1.CAB
+CABINFFile=Projet1.INF
+Uses1=msvbvm60.dll
+Uses2=oleaut32.dll
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=stdole2.tlb
+Uses6=COMCAT.DLL
+Uses7=VB6FR.DLL
+Uses8=AutocableOcx.ocx
+
+[AutocableOcx.ocx <000C>]
+Dest=$(WinSysPath)
+Date=25/05/2007
+Time=15:14
+Version=1.0.0.0

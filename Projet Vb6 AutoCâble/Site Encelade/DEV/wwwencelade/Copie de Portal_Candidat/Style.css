@@ -1,0 +1,111 @@
+  BODY { 
+		
+		margin-left: 0px;
+		margin-top:  0px;
+		font: 8pt "Verdana";		
+		text-align: left;
+		color: DARKBLUE;
+		}
+
+  P { 
+  		margin-left: 0px;
+		margin-right: 0px;
+		color: Gray;
+		font: 9pt "Verdana";
+		}
+ 
+  H1 {
+		font: 22pt "Verdana";
+		margin-left: 0px;
+		font-weight: bold;
+		background: transparent ;
+		color: Navy;
+		}
+
+  H2 {
+		font: 16pt "Verdana";
+		margin-left: 0px;
+		background: transparent ;
+		color: navy
+		}
+
+  H3 {
+		font: 14pt  "Verdana";
+		margin-left: 0px;
+		background: transparent ;
+		font-weight: bold;
+		color: navy
+		}
+
+  H4 {
+		font: 9pt "Verdana";	
+		margin-left: 0px;
+		color: DimGray;
+		font-weight: bold;
+		background: transparent;
+		}
+
+  H5 {
+		font: 9pt "Verdana";
+		margin-left: 0px;
+		background: transparent;
+		color: Navy;
+		}
+
+  TH {
+		font: 12pt "Verdana";
+		color: white;
+		font-weight: bold;
+		}
+
+  TD {	
+    	font: 10pt "Verdana";
+		color: navy;
+		}
+
+  LI { 
+		display: list-item; 
+		margin-left: 0px;  
+		}		
+
+  DL { 
+		display: list-item; 
+		font: 9pt "Verdana";
+		}		
+
+  DT {
+		text-align: left;
+		font-weight: bold;
+		color: navy;
+		}
+
+  DD { 
+		font: 8pt "Verdana";
+  		text-align: left;
+		color: DimGray;
+		}
+
+ STRONG { 
+		font: 18pt "Times New Roman";
+		font-weight: bold;
+		} 
+
+  B { 
+		font-weight: bold; 
+		} 
+
+
+   EM  { 
+		font: 18pt "Times New Roman";
+		}
+
+  I, CITE, VAR, ADDRESS, BLOCKQUOTE { 
+		font-style: italic 
+		}
+  PRE, TT, CODE, KBD, SAMP { 
+		font-family: monospace 
+		}
+  
+A:link {text-decoration: none; color:navy; font: 8pt "Verdana";}
+A:visited {text-decoration: none; color:navy; font: 8pt "Verdana";}
+A:hover {text-decoration:underline; color:red; font: 8pt "Verdana";}

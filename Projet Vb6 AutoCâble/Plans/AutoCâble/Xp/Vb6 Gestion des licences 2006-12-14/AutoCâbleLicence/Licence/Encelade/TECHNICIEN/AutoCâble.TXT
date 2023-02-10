@@ -1,0 +1,13 @@
+Socété: ENCELADE
+User: TECHNICIEN
+Licence: 7738473n
+Pass Word: ZikfZeke
+Possible Achat: Oui
+Préenregistré la licence: Oui
+Prix: 30 €
+Date Début: 01/01/2007
+Date Fin: 01/01/2007
+Nb Jetons: 0
+UserDb: toto
+PassWordDb: toto
+

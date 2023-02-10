@@ -1,0 +1,13 @@
+Socété: Encelade
+User: Cleunt
+Licence: 711067110n
+Pass Word: krkytzit
+Possible Achat: Oui
+Préenregistré la licence: Oui
+Prix: 0 €
+Date Début: 01/01/2006
+Date Fin: 01/01/2006
+Nb Jetons: 0
+UserDb: robert.durupt
+PassWordDb: dur12345
+

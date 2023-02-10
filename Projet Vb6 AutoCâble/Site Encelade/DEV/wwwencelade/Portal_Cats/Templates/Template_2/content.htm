@@ -1,0 +1,52 @@
+<html>
+<head>
+[%css_inc%]
+[%js_inc%]
+<script language="JavaScript">
+var HEWin = null;
+var BBWin = null;
+function killWin() {
+ if (HEWin) {
+  HEWin.close();
+  HEWin = null;
+ }
+ if (BBWin) {
+  BBWin.close();
+  BBWin = null;
+ }
+};
+</script>
+</head>
+<body onUnload="killWin();">
+<form name="formContent" action="?" method="post">
+[%hidden%]
+<table class="headOuterTable" height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr height="100%">
+    <td valign="top" bgcolor="#D1D3D4" width="1"><img src="[%img_path%]pixel.gif" width="1"></td>
+    <td valign="top" style="padding-left:20;">
+      <table class="headContentTable" height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="headTitle" colspan="4"><SPAN class="headCaption">[%head_title%]</SPAN></td>
+          <td class="headSpacer" width="8"><img src="[%img_path%]pixel.gif" width="8"></td>
+        </tr>
+        <tr>
+          <td colspan="4" ><img src="[%img_path%]filet_degrade.jpg" height="4" width="600"></td>
+         <td class="headSpacer"><img src="[%img_path%]pixel.gif" height="8"></td>          
+        </tr>
+        <tr>
+          <td colspan="5" class="headSpacer"><img src="[%img_path%]pixel.gif" height="6"></td>
+        </tr>
+        <tr>
+          <td colspan="5" class="headSpacer"><img src="[%img_path%]pixel.gif" height="6"></td>
+        </tr>
+        <tr height="100%">
+          <td valign="top" align="left" colspan="5" class="formCaption">[%content%]
+          </td>
+        </tr>
+      <table>
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

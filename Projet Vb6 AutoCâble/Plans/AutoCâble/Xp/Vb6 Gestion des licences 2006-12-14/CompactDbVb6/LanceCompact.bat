@@ -1,0 +1,1 @@
+CompactDb.exe "Execute"

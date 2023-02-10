@@ -1,0 +1,5 @@
+Le fichier .cab de votre application a été généré en tant que 'p:\Cablage-production\AutoCable\Setup\AutoCable.CAB'.
+
+Il y a également dans le dossier de support (p:\Cablage-production\AutoCable\Setup\Support\AutoCable.BAT) un fichier de commandes qui vous permettra de recréer le fichier .cab si vous modifiez certains des fichiers.
+
+Vous avez inclus mdac_typ.exe dans votre empaquetage d'installation. Pour installer correctement ce logiciel sur un système Windows 95/98,  DCOM98 doit être installé.

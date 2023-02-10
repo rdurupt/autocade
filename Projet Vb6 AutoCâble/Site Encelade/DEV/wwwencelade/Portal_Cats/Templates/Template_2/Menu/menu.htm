@@ -1,0 +1,39 @@
+<html>
+<head>
+[%css_inc%]
+[%js_inc%]
+<script language="JavaScript">
+[%js_portal_tree%]
+</script>
+</head>
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" text=""#FFFFFF"" background="[%img_path%]background_gauche.jpg">
+<form name="CatMenu" action="?" method="post">
+[%hidden%]
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="142" height="6" >
+  <tr height="6" id="THeading">
+    <td width="6" height="6"><img src="[%img_path%]cat_carre.gif"></td><td></td><td></td>
+  </tr>
+
+
+  <tr id="THeading">
+    <td ></td><td align="center">&nbsp;<font color="white"><b>[%cat_title%]</b></font>&nbsp;</td><td>&nbsp;</td>
+  </tr>
+
+
+  <tr id="THeading">
+    <td></td><td></td><td width="6" height="6"><img src="[%img_path%]cat_carre.gif"></td>
+  </tr>
+</table>
+[%cat_select%]
+</center>
+[%cat_affect%]
+<br>
+&nbsp;&nbsp;&nbsp;<a href="javascript:goToPage('CatAdd', '[%tree_path%]Portal_Cats/Portal_Cats.asp', '[%tree_target%]');" onMouseOver="window.status='[%cat_addStatus%]';return true;" onMouseOut="window.status=' ';return true;">[[%cat_add%]]</a>
+<br>
+<table border="0" cellpadding="0" cellspacing="11"><tr><td><img src="[%img_path%]cat_fleche.gif"></td></tr></table>
+<br>
+[%cat_menu_js%]
+</form>
+</body>
+</html>

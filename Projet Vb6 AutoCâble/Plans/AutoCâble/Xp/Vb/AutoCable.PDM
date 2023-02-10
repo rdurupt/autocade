@@ -1,0 +1,129 @@
+[Root]
+Most Recent Package=Logiciel d'installation standard 1
+
+
+[Package|Logiciel d'installation standard 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=U:\Librairies\Plans\AutoCâble\Xp\Vb\Package (2)
+
+[Package|Logiciel d'installation standard 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Logiciel d'installation standard 1|Files Found]
+
+[Package|Logiciel d'installation standard 1|Files Released]
+
+[Package|Logiciel d'installation standard 1|Missing Dependency Information]
+C:\Program Files\Microsoft Office\Office10\MSOWC.DLL=
+C:\WINDOWS\system32\FM20.DLL=
+C:\Program Files\AutoCAD 2002 Fra\acad.tlb=
+C:\Program Files\Microsoft Office\Office10\EXCEL.EXE=
+C:\Program Files\AutoCAD 2002 Fra\axauto15.tlb=
+
+[Package|Logiciel d'installation standard 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|Logiciel d'installation standard 1|Files Added]
+
+[Package|Logiciel d'installation standard 1|Files Removed]
+
+[Package|Logiciel d'installation standard 1|Files In Project]
+U:\Librairies\Plans\AutoCâble\Xp\Vb\AutoCable.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\VB6FR.DLL=Yes
+C:\Program Files\AutoCAD 2002 Fra\axauto15.tlb=Yes
+C:\Program Files\Microsoft Office\Office10\EXCEL.EXE=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\scrrnfr.dll=Yes
+C:\Program Files\AutoCAD 2002 Fra\acad.tlb=Yes
+C:\WINDOWS\system32\FM20.DLL=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\WINDOWS\system32\TABCTFR.DLL=Yes
+C:\Program Files\Microsoft Office\Office10\MSOWC.DLL=Yes
+C:\WINDOWS\system32\comctl32.ocx=Yes
+C:\WINDOWS\system32\CMCTLFR.DLL=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCMCFR.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Logiciel d'installation standard 1|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Install Locations]
+U:\Librairies\Plans\AutoCâble\Xp\Vb\AutoCable.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6FR.DLL=$(WinSysPath)
+C:\Program Files\AutoCAD 2002 Fra\axauto15.tlb=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office10\EXCEL.EXE=$(AppPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\scrrnfr.dll=$(WinSysPath)
+C:\Program Files\AutoCAD 2002 Fra\acad.tlb=$(WinSysPath)
+C:\WINDOWS\system32\FM20.DLL=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\TABCTFR.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office10\MSOWC.DLL=$(WinSysPath)
+C:\WINDOWS\system32\comctl32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMCTLFR.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCFR.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Logiciel d'installation standard 1|Configure Shared Files]
+Applicable=Yes
+U:\Librairies\Plans\AutoCâble\Xp\Vb\AutoCable.exe=No
+C:\Program Files\Microsoft Office\Office10\EXCEL.EXE=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Logiciel d'installation standard 1|Distribution]
+Type=single
+Size=
+Title=Projet1
+
+[Package|Logiciel d'installation standard 1|IconGroups]
+Group0=Projet1
+PrivateGroup0=Vrai
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard 1|Projet1]
+Icon1=AutoCable.exe
+Title1=Projet1
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard 1|Package]
+PackageFolder=U:\Librairies\Plans\AutoCâble\Xp\Vb\Package (2)
+ProjectFolder=U:\Librairies\Plans\AutoCâble\Xp\Vb
+ServerSideCab=
+File1=U:\Librairies\Plans\AutoCâble\Xp\Vb\Package (2)\setup.exe
+File2=U:\Librairies\Plans\AutoCâble\Xp\Vb\Package (2)\Setup.Lst
+File3=U:\Librairies\Plans\AutoCâble\Xp\Vb\Package (2)\AutoCable.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

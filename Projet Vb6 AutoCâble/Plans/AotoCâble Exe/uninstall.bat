@@ -1,0 +1,1 @@
+ServeurEncelade.exe -uninstall
