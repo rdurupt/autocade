@@ -1,0 +1,6 @@
+<%
+
+	
+	Response.Redirect "encelade.css"
+
+%>
