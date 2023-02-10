@@ -1,0 +1,16 @@
+Le fichier *.cpp est le fichier source pour écrire sur le port parallele.
+
+Créateur:Benoît
+Date de Création:20/02/2004
+
+compilé avec Microsoft Visual  C++ 6 sous win Xp
+
+attention pour le compilé il est nécessaire d'ajouter (dans VB6 C++) 
+au projet avant de linker le fichier de librairie  "WinIo.lib" ce trouvant dans le 
+répertoire "Debug".
+
+vous verrez, j'ai rajouté plusieurs sources fortes utiles comme comment récupérer l'heure de votre marchine
+ou bien écrire dans un fichier.
+bon amusez vous bien .
+@+
+Benoît exterminabur@UT2004

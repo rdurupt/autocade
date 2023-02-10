@@ -1,0 +1,226 @@
+C51 COMPILER V7.05   TESTAFFICHE                                                           05/16/2007 09:12:21 PAGE 1   
+
+
+C51 COMPILER V7.05, COMPILATION OF MODULE TESTAFFICHE
+OBJECT MODULE PLACED IN testaffiche.OBJ
+COMPILER INVOKED BY: C:\Cygnal\IDEfiles\C51\BIN\C51.exe testaffiche.c DB OE
+
+stmt level    source
+
+   1           //------------------------------------------------------------------------------------
+   2          // BIBLIOTHEQUES
+   3          //------------------------------------------------------------------------------------
+   4          #include <c8051f000.h>
+   5          #include<stdio.h>
+   6          
+   7          
+   8          //------------------------------------------------------------------------------------
+   9          // AFFECTATION DES PINS ET VARIABLE GLOBALE
+  10          //------------------------------------------------------------------------------------
+  11          
+  12          sbit E = P2^5;
+  13          sbit RS = P2^6;
+  14          sbit RW = P2^7;
+  15          
+  16          sbit BF = P3^7;
+  17          
+  18          char caractere[16];
+  19          int donnee;
+  20          
+  21          //------------------------------------------------------------------------------------
+  22          // CONSTANTES GLOBALES
+  23          //------------------------------------------------------------------------------------
+  24          #define         TRUE                    0x01                    // Value representing TRUE
+  25          #define         FALSE                   0x00                    // Value representing FALSE
+  26          #define         DB P3
+  27          
+  28          //------------------------------------------------------------------------------------
+  29          // FONCTIONS PROTOTYPES
+  30          //------------------------------------------------------------------------------------
+  31          void delai(unsigned int);
+  32          void delai_long(unsigned int);
+  33          void code_LCD(char);
+  34          void code_LCD_init(char);
+  35          void init_aff (void);
+  36          void my_init_aff (void);
+  37          void clear_display(void);
+  38          void function_set(void);
+  39          void display_ON(void);
+  40          void display_OFF(void);
+  41          void mode_set(void);
+  42          void chaine (char* caractere, int nb_caractere);
+  43          
+  44          char message[16]="bonjour geii";   //Message à Afficher
+  45          
+  46          //------------------------------------------------------------------------------------
+  47          // MAIN
+  48          //------------------------------------------------------------------------------------
+  49          void main(void)
+  50          {
+  51   1      long int j;
+  52   1      
+  53   1      
+  54   1      
+  55   1      /********** definition de l'horloge du système : externe 12MHz*********/
+C51 COMPILER V7.05   TESTAFFICHE                                                           05/16/2007 09:12:21 PAGE 2   
+
+  56   1      OSCXCN=0x67;
+  57   1      for(j=0;j<256;j++);
+  58   1       while(!(OSCXCN&0x80));
+  59   1      OSCICN=0x0C;
+  60   1      
+  61   1      /********** configuration des registres ***********/
+  62   1      //arret du watchdog timer
+  63   1      WDTCN = 0xde;
+  64   1      WDTCN = 0xad;
+  65   1      
+  66   1      // Configure the XBRn Registers
+  67   1      XBR0 = 0x00;    // XBAR0: Initial Reset Value   
+  68   1      XBR1 = 0x00;    // XBAR1: Initial Reset Value
+  69   1      XBR2 = 0x40;    // XBAR2: Initial Reset Value
+  70   1      
+  71   1      //P1, P2 et P3 drain ouvert
+  72   1      PRT1CF=0x00 ;
+  73   1      PRT2CF=0x00 ;
+  74   1      PRT3CF=0x00 ;
+  75   1      
+  76   1      
+  77   1      
+  78   1      /********** initialisation de l'afficheur*************/
+  79   1      
+  80   1      init_aff();
+  81   1      init_aff();
+  82   1      chaine(message,16);
+  83   1      while(TRUE);
+  84   1      
+  85   1      }
+  86          
+  87          
+  88          //------------------------------------------------------------------------------------
+  89          // FONCTIONS
+  90          //------------------------------------------------------------------------------------
+  91          
+  92          /***********fonction d'attente en microseconde *************/
+  93          void delai (unsigned int T)
+  94          {
+  95   1              //configure Timer 3
+  96   1              TMR3H=(unsigned char)((0xFFFF-T)>>8);
+  97   1              TMR3L=(unsigned char)(0xFFFF-T);
+  98   1              TMR3CN=0x04;                            //TR3=1   T3M=0 (car on a une horloge de 12MHz et on veut 1MHz)
+  99   1                                                      //                et on garde les autres valeurs
+ 100   1              while(!(TMR3CN&0x80));          //tant que TF3=0
+ 101   1      }
+ 102          
+ 103          /***********fonction d'attente en milliseconde *************/
+ 104          void delai_long (unsigned int T)
+ 105          {
+ 106   1              int i;
+ 107   1              for(i=0;i<T;i++)
+ 108   1                      delai(1000);
+ 109   1              
+ 110   1      }
+ 111          
+ 112          /**************initialisation code LCD******************/
+ 113          void code_LCD_init (unsigned char donnees)
+ 114          {
+ 115   1              E=0;
+ 116   1              RS=0;                                   //afficheur attend une commande
+ 117   1              RW=0;
+C51 COMPILER V7.05   TESTAFFICHE                                                           05/16/2007 09:12:21 PAGE 3   
+
+ 118   1              E=1;                                    //validation de l'afficheur
+ 119   1              delai(20);                              //attente de la validation de la commande
+ 120   1              DB=donnees;                             //commande envoyé au LCD
+ 121   1              delai(10);                              //attente de la validation de la commande
+ 122   1              E=0;                                    //écriture dans l'afficheur
+ 123   1      }
+ 124          
+ 125          /***********initialisation afficheur************/
+ 126          void init_aff (void)
+ 127          {
+ 128   1              delai_long(20);
+ 129   1              clear_display();
+ 130   1              delai_long(6);
+ 131   1              function_set();
+ 132   1              delai_long(6);
+ 133   1              display_ON();
+ 134   1              delai_long(6);
+ 135   1              mode_set();
+ 136   1      }
+ 137          
+ 138          
+ 139          /*************clear display************/
+ 140          void clear_display(void)
+ 141          {
+ 142   1              code_LCD_init(0x01);
+ 143   1      }
+ 144          
+ 145          /*************function set*************/
+ 146          void function_set(void)
+ 147          {
+ 148   1              code_LCD_init(0x38);
+ 149   1      }
+ 150          
+ 151          /*************display ON**********/
+ 152          void display_ON(void)
+ 153          {
+ 154   1              code_LCD_init(0x0F);
+ 155   1      }
+ 156          
+ 157          /*************display OFF**********/
+ 158          void display_OFF(void)
+ 159          {
+ 160   1              code_LCD_init(0x08);
+ 161   1      }
+ 162          
+ 163          /**************Mode set*************/
+ 164          void mode_set(void)
+ 165          {
+ 166   1              code_LCD_init(0x06);
+ 167   1      }
+ 168          
+ 169          /*************affichage ************/
+ 170          void code_LCD (char donnees)
+ 171          {
+ 172   1              E=0;
+ 173   1              RS=1;                                   //afficheur attend une commande
+ 174   1              RW=0;
+ 175   1              E=1;                                    //validation de l'afficheur
+ 176   1              delai(20);                              //attente de la validation de la commande
+ 177   1              DB=donnees;                             //commande envoyé au LCD
+ 178   1              delai(10);                              //attente de la validation de la commande
+ 179   1              E=0;                                    //écriture dans l'afficheur
+C51 COMPILER V7.05   TESTAFFICHE                                                           05/16/2007 09:12:21 PAGE 4   
+
+ 180   1      }
+ 181          
+ 182          
+ 183          /************fonction chaine***********/
+ 184          void chaine (char* caractere,int nb_caractere)
+ 185          {
+ 186   1      int i;  
+ 187   1      for(i=0;i<(nb_caractere-1);i++)
+ 188   1              {
+ 189   2              if(i==8)
+ 190   2                      code_LCD_init(0xC0);
+ 191   2              code_LCD (caractere[i]);
+ 192   2              }
+ 193   1              
+ 194   1      }
+ 195          
+ 196          
+ 197          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    342    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     34      11
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

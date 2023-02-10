@@ -1,0 +1,12 @@
+all: bdtheque.o bd_inout.o
+	gcc -o  bdtheque.exe bdtheque.o bd_inout.o -Wall -lm
+	
+bdtheque.o: bdtheque.c bdtheque.h
+	gcc -c bdtheque.c -Wall
+	
+bd_inout.o: bd_inout.c bdtheque.h
+	gcc -c bd_inout.c -Wall
+
+clean :
+	del *.o
+	

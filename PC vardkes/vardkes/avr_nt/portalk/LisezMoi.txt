@@ -1,0 +1,19 @@
+Installation:
+
+1) Sous XP mettre "porttalk.sys" dans c:\windows\system32\drivers
+ou sous NT/2000 dans c:\winnt\system32\drivers
+
+2) mettre "allowio.exe", "go.bat" et "porttalk.reg" dans le repertoire
+d'installation de CNC3Axes, dans cet exemple: c:\CNC3Axes_V1_0
+
+3) Lancer "porttalk.reg" et répondre "oui" pour enregistrer le driver.
+
+4) Rebooter le système.
+
+C'est prêt.
+
+IMPORTANT:
+Bien faire correspondre le contenu de "go.bat" avec le chemin du répertoire et le nom du programme,
+dans cet exemple chemin = c:\CNC3Axes_V1_0 et nom du programme = CNC3Axes_V1_0.EXE
+
+FT

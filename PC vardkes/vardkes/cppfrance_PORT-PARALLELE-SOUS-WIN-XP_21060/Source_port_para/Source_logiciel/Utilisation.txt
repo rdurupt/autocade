@@ -1,0 +1,25 @@
+
+
+donc tout d'abord les adresses que j'utilise sont en hexa or je les ai utilisé
+en décimal: (0x378)=(888)d et (0x379)h=(889)d et (0x37A)h=(890)d
+vous pouvez le vérifier sur la calculette de win.
+sinon
+la fonction ecritprn(int bit) permet d'écrire sur le adresse 0x378 correspondant aux 8 bits d'entrée/sorties
+du port parallele: donc si vous voulez mettre a un les bits DO et D1 par exemple
+vous devez écrire _inp(888,3) : 3 = 1 + 2
+je  joins un tableau des signaux et de leurs points binaires.
+attention si vous voulez mettre à zéro un bit n'oubliez pas
+de laisser à un les autres bits qui étaient à un et à zéro ceux qui l'étaient et que vous ne voulez pas changer
+
+en ce qui concerne les librairies,ceux sont les fichiers :winio.* (4 au total) il faut les mettre dans le meme dossier que ton executable créé
+par le compilateur. vous devez compiler une fois d'abord et la seconde fois (si vous utilisez VB6 C++ par exemple) vous faites ajouter fichier au projet en mettant l'extention .lib et valider
+ensuite vous recompilez et certaines erreurs seront enlevées.et surtout laisser ces fichiers avec l'exec pour vos applications divers.
+ensuite les biblios qui sont dans le dossiers DLL il faut les mettre avec vos autres *.h (tous bien sur) c'est ce qui permet de dire à win xp laisse moi écrire sur ce port de m... :-) 
+et il faut dans votre fichier source du code d'appeler en include pour le c/c++ le fichier"winio.h".
+voila je crois que j'ai tout dit sinon n'hésitez pas à me redemander des infos.
+
+le tableau se trouve à cette adresse:
+http://www.courselec.free.fr/info%20indus/interface%20pc/port%20parallele/port%20parallele.htm
+
+@+
+exterminabur

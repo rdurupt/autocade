@@ -1,0 +1,320 @@
+BL51 BANKED LINKER/LOCATER V5.03              05/16/2007  09:12:21  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.03, INVOKED BY:
+C:\CYGNAL\IDEFILES\C51\BIN\BL51.EXE C:\TRVOLT\TESTAFFICHE.OBJ TO C:\TRVOLT\TES
+>> TAFFICHE RS (256) PL (68) PW (78)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  C:\TRVOLT\TESTAFFICHE.OBJ (TESTAFFICHE)
+  C:\CYGNAL\IDEFILES\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\CYGNAL\IDEFILES\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  C:\CYGNAL\IDEFILES\C51\LIB\C51S.LIB (?C?SLCMP)
+  C:\CYGNAL\IDEFILES\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  C:\TRVOLT\TESTAFFICHE (TESTAFFICHE)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0022H     UNIT         ?DT?TESTAFFICHE
+            DATA    002AH     000BH     UNIT         _DATA_GROUP_
+            IDATA   0035H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     006CH     UNIT         ?PR?MAIN?TESTAFFICHE
+            CODE    00FBH     0053H     UNIT         ?PR?_CHAINE?TESTAFFICHE
+            CODE    014EH     0043H     UNIT         ?C?LIB_CODE
+            CODE    0191H     002BH     UNIT         ?PR?_DELAI?TESTAFFICHE
+            CODE    01BCH     001FH     UNIT         ?PR?_DELAI_LONG?TESTAFFIC
+>> HE
+            CODE    01DBH     001CH     UNIT         ?PR?INIT_AFF?TESTAFFICHE
+            CODE    01F7H     0013H     UNIT         ?C_INITSEG
+            CODE    020AH     000CH     UNIT         ?PR?_CODE_LCD_INIT?TESTAF
+>> FICHE
+            CODE    0216H     000CH     UNIT         ?PR?_CODE_LCD?TESTAFFICHE
+>> 
+            CODE    0222H     0005H     UNIT         ?PR?CLEAR_DISPLAY?TESTAFF
+>> ICHE
+            CODE    0227H     0005H     UNIT         ?PR?FUNCTION_SET?TESTAFFI
+>> CHE
+            CODE    022CH     0005H     UNIT         ?PR?DISPLAY_ON?TESTAFFICH
+>> E
+            CODE    0231H     0005H     UNIT         ?PR?DISPLAY_OFF?TESTAFFIC
+>> HE
+            CODE    0236H     0005H     UNIT         ?PR?MODE_SET?TESTAFFICHE
+
+
+
+OVERLAY MAP OF MODULE:   C:\TRVOLT\TESTAFFICHE (TESTAFFICHE)
+
+
+SEGMENT                                  DATA_GROUP 
+  +--> CALLED SEGMENT                  START    LENGTH
+------------------------------------------------------
+?C_C51STARTUP                          -----    -----
+  +--> ?PR?MAIN?TESTAFFICHE
+  +--> ?C_INITSEG
+
+?PR?MAIN?TESTAFFICHE                   002AH    0004H
+BL51 BANKED LINKER/LOCATER V5.03            05/16/2007  09:12:21  PAGE 2
+
+
+  +--> ?PR?INIT_AFF?TESTAFFICHE
+  +--> ?PR?_CHAINE?TESTAFFICHE
+
+?PR?INIT_AFF?TESTAFFICHE               -----    -----
+  +--> ?PR?_DELAI_LONG?TESTAFFICHE
+  +--> ?PR?CLEAR_DISPLAY?TESTAFFICHE
+  +--> ?PR?FUNCTION_SET?TESTAFFICHE
+  +--> ?PR?DISPLAY_ON?TESTAFFICHE
+  +--> ?PR?MODE_SET?TESTAFFICHE
+
+?PR?_DELAI_LONG?TESTAFFICHE            -----    -----
+  +--> ?PR?_DELAI?TESTAFFICHE
+
+?PR?CLEAR_DISPLAY?TESTAFFICHE          -----    -----
+  +--> ?PR?_CODE_LCD_INIT?TESTAFFICHE
+
+?PR?_CODE_LCD_INIT?TESTAFFICHE         -----    -----
+  +--> ?PR?_DELAI?TESTAFFICHE
+
+?PR?FUNCTION_SET?TESTAFFICHE           -----    -----
+  +--> ?PR?_CODE_LCD_INIT?TESTAFFICHE
+
+?PR?DISPLAY_ON?TESTAFFICHE             -----    -----
+  +--> ?PR?_CODE_LCD_INIT?TESTAFFICHE
+
+?PR?MODE_SET?TESTAFFICHE               -----    -----
+  +--> ?PR?_CODE_LCD_INIT?TESTAFFICHE
+
+?PR?_CHAINE?TESTAFFICHE                002EH    0007H
+  +--> ?PR?_CODE_LCD_INIT?TESTAFFICHE
+  +--> ?PR?_CODE_LCD?TESTAFFICHE
+
+?PR?_CODE_LCD?TESTAFFICHE              -----    -----
+  +--> ?PR?_DELAI?TESTAFFICHE
+
+
+
+SYMBOL TABLE OF MODULE:  C:\TRVOLT\TESTAFFICHE (TESTAFFICHE)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        TESTAFFICHE
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00FFH         PUBLIC        WDTCN
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00E8H         PUBLIC        ADC0CN
+  D:00A8H         PUBLIC        IE
+  D:00D8H         PUBLIC        PCA0CN
+  D:00B8H         PUBLIC        IP
+  C:0227H         PUBLIC        function_set
+  D:00E1H         PUBLIC        XBR0
+  D:00E2H         PUBLIC        XBR1
+  D:00E3H         PUBLIC        XBR2
+  B:00A0H.6       PUBLIC        RS
+  D:00C0H         PUBLIC        SMB0CN
+  C:008FH         PUBLIC        main
+  B:00A0H.7       PUBLIC        RW
+  D:00F8H         PUBLIC        SPI0CN
+  D:0008H         PUBLIC        caractere
+  C:0216H         PUBLIC        _code_LCD
+  D:00A5H         PUBLIC        PRT1CF
+  D:00A6H         PUBLIC        PRT2CF
+  D:00A7H         PUBLIC        PRT3CF
+BL51 BANKED LINKER/LOCATER V5.03            05/16/2007  09:12:21  PAGE 3
+
+
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:0231H         PUBLIC        display_OFF
+  D:0091H         PUBLIC        TMR3CN
+  D:00B2H         PUBLIC        OSCICN
+  B:00A0H.5       PUBLIC        E
+  C:01DBH         PUBLIC        init_aff
+  C:020AH         PUBLIC        _code_LCD_init
+  C:00FBH         PUBLIC        _chaine
+  D:00B1H         PUBLIC        OSCXCN
+  C:0236H         PUBLIC        mode_set
+  C:01A0H         PUBLIC        _delai
+  C:0222H         PUBLIC        clear_display
+  D:00C8H         PUBLIC        T2CON
+  D:0018H         PUBLIC        message
+  D:0095H         PUBLIC        TMR3H
+  D:0094H         PUBLIC        TMR3L
+  C:01C0H         PUBLIC        _delai_long
+  C:022CH         PUBLIC        display_ON
+  D:00D0H         PUBLIC        PSW
+  D:0028H         PUBLIC        donnee
+  -------         PROC          MAIN
+  -------         DO            
+  D:002AH         SYMBOL        j
+  -------         ENDDO         
+  C:008FH         LINE#         49
+  C:008FH         LINE#         50
+  C:008FH         LINE#         56
+  C:0092H         LINE#         57
+  C:00CAH         LINE#         58
+  C:00CFH         LINE#         59
+  C:00D2H         LINE#         63
+  C:00D5H         LINE#         64
+  C:00D8H         LINE#         67
+  C:00DBH         LINE#         68
+  C:00DDH         LINE#         69
+  C:00E0H         LINE#         72
+  C:00E2H         LINE#         73
+  C:00E4H         LINE#         74
+  C:00E6H         LINE#         80
+  C:00E9H         LINE#         81
+  C:00ECH         LINE#         82
+  C:00F9H         LINE#         83
+  -------         ENDPROC       MAIN
+  -------         PROC          L?0030
+  -------         ENDPROC       L?0030
+  -------         PROC          _DELAI
+  D:0004H         SYMBOL        T
+  C:01A0H         LINE#         93
+  C:01A4H         LINE#         94
+  C:01A4H         LINE#         96
+  C:01ADH         LINE#         97
+  C:01B3H         LINE#         98
+  C:01B6H         LINE#         100
+  C:01BBH         LINE#         101
+  -------         ENDPROC       _DELAI
+  C:01BCH         SYMBOL        L?0032
+  -------         PROC          L?0031
+  -------         ENDPROC       L?0031
+  C:01BCH         SYMBOL        L?0032
+  -------         PROC          _DELAI_LONG
+  D:0002H         SYMBOL        T
+  -------         DO            
+  D:0082H         SYMBOL        i
+  -------         ENDDO         
+BL51 BANKED LINKER/LOCATER V5.03            05/16/2007  09:12:21  PAGE 4
+
+
+  C:01C0H         LINE#         104
+  C:01C4H         LINE#         105
+  C:01C4H         LINE#         107
+  C:01D0H         LINE#         108
+  C:01DAH         LINE#         110
+  -------         ENDPROC       _DELAI_LONG
+  -------         PROC          _CODE_LCD_INIT
+  D:0003H         SYMBOL        donnees
+  C:020AH         LINE#         113
+  C:020CH         LINE#         114
+  C:020CH         LINE#         115
+  C:020EH         LINE#         116
+  C:0210H         LINE#         117
+  C:0210H         LINE#         118
+  C:0210H         LINE#         119
+  C:0210H         LINE#         120
+  C:0210H         LINE#         121
+  C:0213H         LINE#         122
+  C:0215H         LINE#         123
+  -------         ENDPROC       _CODE_LCD_INIT
+  -------         PROC          INIT_AFF
+  C:01DBH         LINE#         126
+  C:01DBH         LINE#         127
+  C:01DBH         LINE#         128
+  C:01E2H         LINE#         129
+  C:01E5H         LINE#         130
+  C:01E8H         LINE#         131
+  C:01EBH         LINE#         132
+  C:01EEH         LINE#         133
+  C:01F1H         LINE#         134
+  C:01F4H         LINE#         135
+  -------         ENDPROC       INIT_AFF
+  -------         PROC          CLEAR_DISPLAY
+  C:0222H         LINE#         140
+  C:0222H         LINE#         141
+  C:0222H         LINE#         142
+  -------         ENDPROC       CLEAR_DISPLAY
+  -------         PROC          FUNCTION_SET
+  C:0227H         LINE#         146
+  C:0227H         LINE#         147
+  C:0227H         LINE#         148
+  -------         ENDPROC       FUNCTION_SET
+  -------         PROC          DISPLAY_ON
+  C:022CH         LINE#         152
+  C:022CH         LINE#         153
+  C:022CH         LINE#         154
+  -------         ENDPROC       DISPLAY_ON
+  -------         PROC          DISPLAY_OFF
+  C:0231H         LINE#         158
+  C:0231H         LINE#         159
+  C:0231H         LINE#         160
+  -------         ENDPROC       DISPLAY_OFF
+  -------         PROC          MODE_SET
+  C:0236H         LINE#         164
+  C:0236H         LINE#         165
+  C:0236H         LINE#         166
+  -------         ENDPROC       MODE_SET
+  -------         PROC          _CODE_LCD
+  D:0003H         SYMBOL        donnees
+  C:0216H         LINE#         170
+  C:0218H         LINE#         171
+  C:0218H         LINE#         172
+  C:021AH         LINE#         173
+  C:021CH         LINE#         174
+  C:021CH         LINE#         175
+BL51 BANKED LINKER/LOCATER V5.03            05/16/2007  09:12:21  PAGE 5
+
+
+  C:021CH         LINE#         176
+  C:021CH         LINE#         177
+  C:021CH         LINE#         178
+  C:021FH         LINE#         179
+  C:0221H         LINE#         180
+  -------         ENDPROC       _CODE_LCD
+  -------         PROC          _CHAINE
+  D:002EH         SYMBOL        caractere
+  D:0031H         SYMBOL        nb_caractere
+  -------         DO            
+  D:0033H         SYMBOL        i
+  -------         ENDDO         
+  C:00FBH         LINE#         184
+  C:0105H         LINE#         185
+  C:0105H         LINE#         187
+  C:0123H         LINE#         188
+  C:0123H         LINE#         189
+  C:012BH         LINE#         190
+  C:0130H         LINE#         191
+  C:0143H         LINE#         192
+  C:014DH         LINE#         194
+  -------         ENDPROC       _CHAINE
+  -------         ENDMOD        TESTAFFICHE
+
+  -------         MODULE        ?C?CLDOPTR
+  C:014EH         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?SLCMP
+  C:017BH         PUBLIC        ?C?SLCMP
+  -------         ENDMOD        ?C?SLCMP
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DISPLAY_OFF?TESTAFFICHE
+
+******************************************************************************
+>> 
+* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 024EH BYTE (14%) *
+>> 
+******************************************************************************
+>> 
+
+Program Size: data=54.0 xdata=0 code=571
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

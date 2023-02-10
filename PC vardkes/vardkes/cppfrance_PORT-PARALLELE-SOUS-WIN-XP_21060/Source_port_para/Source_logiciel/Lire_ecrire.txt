@@ -1,0 +1,29 @@
+
+Fonctions pour lire ou écrire sur le port //:
+
+fonction entrée/sortie (TTL)
+
+
+en fait sur le port parallele, on peut:
+	- lire et écrire à l'adresse 0x37A (=890d)
+	- que écrire à l'adresse 0x378 (=888d)
+	- que lire à l'adresse 0x379 (=889d)
+
+//Lecture:
+unsigned short commande;
+commande=_inp(890); /* Registre de commande */
+donc on peut utiliser ce registre comme entrée
+
+//écriture:
+void ecritPRN(int bit)
+{
+	_outp(888,bit);
+}
+et on peut utiliser ce registre comme sortie
+
+pour le brochage et les registres se référer au fichier "bits.doc" dans ce même dossier
+
+voilà une petite précision pour faire du TTL.
+
+@+
+exterminabur
